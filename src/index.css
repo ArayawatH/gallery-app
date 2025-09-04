@@ -1,0 +1,67 @@
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Remove padding to allow full width */
+}
+
+h1 {
+  margin: 32px 0 24px 32px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  /* Remove width: 100%; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.image-card {
+  width: 220px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 280px; /* adjust as needed */
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px 6px 0 0;
+}
+
+.tags-container {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 8px;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+}
+
+.tag {
+  display: inline-block;
+  background: #e0f0ff;
+  color: #0366d6;
+  padding: 2px 8px;
+  margin: 2px 2px 0 0;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.tag:hover {
+  background: #cce4ff;
+}
